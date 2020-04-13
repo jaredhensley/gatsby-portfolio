@@ -24,7 +24,7 @@ aside nav ul li {
    font-weight: 500;
 }
 
-a {
+aside nav ul li a {
    letter-spacing: 1.2px;
    border-width: 0px 0px 2px;
    border-style: solid;
