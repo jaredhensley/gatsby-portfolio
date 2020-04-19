@@ -1,0 +1,60 @@
+.container {
+   display: grid;
+   grid-template-columns: 1fr 4.5fr;
+   height: 100vh;
+}
+
+.navigation {
+   display: flex;
+   flex-direction: column;
+   padding: 1.75rem;
+
+   p {
+      font-weight: 400;
+      color: #696969;
+      font-size: 15px;
+
+      &:last-of-type {
+         margin-top: auto;
+      }
+   }
+
+   nav {
+      color: #838383;
+      margin: auto 0;
+
+      ul {
+         margin-left: 0;
+      }
+
+      li {
+         list-style: none;
+         font-weight: 500;
+
+         &:hover a {
+            color: rgb(52, 52, 52);
+            border-color: rgb(52, 52, 52);
+         }
+      }
+
+      a {
+         letter-spacing: 1.2px;
+         text-decoration: none;
+         color: inherit;
+         border-width: 0px 0px 2px;
+         border-style: solid;
+         border-color: transparent;
+         transition: border-color 0.3s ease 0s, color 0.3s ease 0s;
+      }
+
+   }
+}
+
+main {
+   display: flex;
+   flex-direction: column;
+   background-color: #D3D3D3;
+   padding: 20vh 1.75rem 10vh;
+}
+
+

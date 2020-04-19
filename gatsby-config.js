@@ -5,6 +5,7 @@ module.exports = {
     author: `@Iamjahweb`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     {
       resolve: "gatsby-plugin-typography",
       options: {

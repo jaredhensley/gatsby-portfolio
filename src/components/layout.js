@@ -1,12 +1,16 @@
 import React from "react"
-import layoutStyles from "./layout.module.css" 
-
+import layoutStyles from "./layout.module.scss" 
 
 const Layout = ({ children }) => {
   return (
     <div id="layout__container" className={layoutStyles.container}>
-      <aside className={layoutStyles.aside}>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque necessitatibus pariatur</p>
+      <aside className={layoutStyles.navigation}>
+        <h2>Jared Hensley</h2>
+        <p>
+          Software developer<br></br>
+          Reader of books<br></br>
+          Learner of things<br></br>
+        </p>
         <nav>
           <ul>
             <li>
@@ -16,17 +20,19 @@ const Layout = ({ children }) => {
               <a href="">SERVICES</a>
             </li>
             <li>
-              <a href="">CONTACT</a>
-            </li>
-            <li>
               <a href="">PORTFOLIO</a>
             </li>
             <li>
               <a href="">BLOG</a>
             </li>
+            <li>
+              <a href="">CONTACT</a>
+            </li>
           </ul>
         </nav>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p>
+          For business enquiries or casual chatter—do drop me a line at jahensle85@me.com I ♥︎ emails.
+        </p>
       </aside>
       <main className={layoutStyles.main}>{children}</main>
     </div>
