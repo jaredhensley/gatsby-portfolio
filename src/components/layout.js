@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import layoutStyles from "./layout.module.scss" 
 
 const Layout = ({ children }) => {
@@ -7,31 +8,31 @@ const Layout = ({ children }) => {
       <aside className={layoutStyles.navigation}>
         <h2>Jared Hensley</h2>
         <p>
-          Software developer<br></br>
-          Reader of books<br></br>
-          Learner of things<br></br>
+          <span>Product Engineer</span>
+          <span>Reader of books</span>
+          <span>Learner of things</span>
         </p>
         <nav>
           <ul>
             <li>
-              <a href="">HOME</a>
+              <Link to='/' activeClassName="active">HOME</Link>
             </li>
             <li>
-              <a href="">SERVICES</a>
+              <Link to='/services' activeClassName="active">SERVICES</Link>
             </li>
             <li>
-              <a href="">PORTFOLIO</a>
+              <Link to='/portfolio' activeClassName="active">PORTFOLIO</Link>
             </li>
             <li>
-              <a href="">BLOG</a>
+              <Link to='/blog' activeClassName="active">BLOG</Link>
             </li>
             <li>
-              <a href="">CONTACT</a>
+              <Link to='/contact' activeClassName="active">CONTACT</Link>
             </li>
           </ul>
         </nav>
         <p>
-          For business enquiries or casual chatter—do drop me a line at jahensle85@me.com I ♥︎ emails.
+          For business enquiries or casual chatter—do drop me a line at jahensle85@me.com
         </p>
       </aside>
       <main className={layoutStyles.main}>{children}</main>

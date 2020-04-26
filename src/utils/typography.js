@@ -4,7 +4,7 @@ const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.75,
   headerFontFamily: ["Roboto mono", "monospace"],
-  bodyFontFamily: ["Rubik", "monospace"],
+  bodyFontFamily: ["Rubik", "Arial", "sans-serif"],
   googleFonts: [
     {
       name: "Roboto Mono",

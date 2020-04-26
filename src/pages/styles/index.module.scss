@@ -1,0 +1,48 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+
+  .intro {
+    display: block;
+    color: white;
+    margin-bottom: 1em;
+    font-weight: 400;
+    font-size: .75em;
+  }
+
+  .tagline {
+    font-size: 1.15em;
+    line-height: 1.5;
+    color: #343434;
+    font-weight: 500;
+  }
+
+  .description {
+    font-size: 1.4em;
+    color: #696969;
+  }
+
+  .navigate {
+    display: flex;
+    margin: 0;
+
+    li {
+      list-style: none;
+
+      &:first-of-type {
+        margin-right: 1em;
+      }
+
+      a {
+        text-decoration: none;
+        color: #343434;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 1.2px;
+        text-transform: uppercase;
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+}

@@ -1,19 +1,25 @@
 import React from "react"
 
 import Layout from "../components/layout"
+import indexStyles from "./styles/index.module.scss" 
 
 const IndexPage = () => (
   <Layout>
-    <h4>Hey, thanks for stopping by</h4>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam recusandae aliquam dolor est magni atque, unde, distinctio soluta dignissimos laboriosam nemo placeat qui vel, amet eius tenetur ea incidunt ad!</p> 
-    <ul>
-      <li>
-        <a href="">My Work</a>
-      </li>
-      <li>
-        <a href="">Contact</a>
-      </li>
-    </ul>
+    <section className={indexStyles.container}>
+      <h1>
+        <span className={indexStyles.intro}>Hi, I'm Jared.</span>
+        <span className={indexStyles.tagline}>Product engineer dedicated to sleek UX and clean code.</span>
+      </h1>
+      <p className={indexStyles.description}>Highly experienced front-end developer with a knack for building out pixel-designs with responsivenss and accessability in mind.</p>
+      <ul className={indexStyles.navigate}>
+        <li>
+          <a href="">See My Work</a>
+        </li>
+        <li>
+          <a href="">Get In Touch</a>
+        </li>
+      </ul>
+    </section>
   </Layout>
 )
 
